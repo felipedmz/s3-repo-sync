@@ -38,7 +38,8 @@ class S3Service
         $this->s3Client->putObject(array(
             'Bucket'     => S3_BUCKET_NAME,
             'Key'        => $targetPath,
-            'SourceFile' => $realPath
+            'SourceFile' => $realPath,
+            'ACL'        => 'public-read'
         ));
     }
 }
