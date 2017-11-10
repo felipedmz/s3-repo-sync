@@ -1,7 +1,6 @@
 <?php
 /**
- * @author Felipe Maziero <felipe.pereira@trigg.com.br>
- * @copyright 2017 Trigg, Emprestto
+ * @author Felipe Maziero <flpmaziero@gmail.com>
  * @see config.ini file
  */
 
