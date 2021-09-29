@@ -8,12 +8,12 @@ require 'bootstrap.php';
 
 echo "\nSync Directory = " . SYNC_DIRECTORY;
 //
-$git = new \Bot\Git();
-echo "\nChecking out to stable version\n";
-echo $git->checkoutTo("master");
-echo "\nUpdating (pull)...\n";
-echo $git->pull();
-echo "\n-----------------\n";
+// $git = new \Bot\Git();
+// echo "\nChecking ou  t to stable version\n";
+// echo $git->checkoutTo("master");
+// echo "\nUpdating (pull)...\n";
+// echo $git->pull();
+// echo "\n-----------------\n";
 //
 echo "\nUpload Enabled = " . ((UPLOAD_ENABLED) ? "YES" : "NO");
 //

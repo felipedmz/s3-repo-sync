@@ -41,7 +41,7 @@ class Uploader
      */
     public function run()
     {
-        try {
+        // try {
             $this->logger->warning("ENABLE UPLOAD = " . UPLOAD_ENABLED);
             $directory = new \RecursiveDirectoryIterator(SYNC_DIRECTORY);
             $iterator  = new \RecursiveIteratorIterator($directory);
@@ -58,10 +58,10 @@ class Uploader
                     $this->logger->debug("IGNORING >> {$realPath}");
                 }
             }
-        } catch (S3Exception $e) {
+        /*} catch (S3Exception $e) {
             $this->logger->error($e->getMessage());
             $this->logger->error($e->getStackTrace());
-        }
+        }*/
     }
 
     /**
